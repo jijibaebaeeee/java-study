@@ -20,6 +20,7 @@ public class Task01 { // 클래스의 중괄호 영역시작
 	   Scanner sc = new Scanner(System.in);
 	   System.out.println("정수를 입력하세요 : ");
 	   num1 = sc.nextInt();
+	   sc.nextLine(); // 버퍼비우기
 	   
 	   System.out.println(num1 % 2 == 0 ? "짝수입니다" : "홀수입니다.");
 	   
@@ -44,6 +45,7 @@ public class Task01 { // 클래스의 중괄호 영역시작
 	   int num2 = 0;
 	   System.out.println("정수를 입력하세요 : ");
 	   num2 = sc.nextInt();
+	   sc.nextLine(); // 버퍼비우기
 	   
 	   if(num2 == 0) {
 		   System.out.println("0입니다");
@@ -71,6 +73,7 @@ public class Task01 { // 클래스의 중괄호 영역시작
 	   int num3 = 0;
 	   System.out.println("나이를 입력하세요 : ");
 	   num3 = sc.nextInt();
+	   sc.nextLine(); // 버퍼비우기
 	   
 	   if(num3 > 0 && num3 <= 12) {
 		   System.out.println("어린이입니다");
@@ -90,13 +93,31 @@ public class Task01 { // 클래스의 중괄호 영역시작
 	   // 세 개의 정수를 입력받을 변수 선언
 	   // 출력 메시지 -> 세 정수를 띄어쓰기로 구분하여 입력하세요 :
 	   // 입력 메소드 -> nextInt()
-	   // 출력 메시지 -> 삼항연산자
+	   // 최댓값 임의로 지정
+	   // 출력 메시지 -> 삼항연산자 사용 -> 가장작은것 + 가장 큰것 -> 중간것
 	   
 	   int num4 = 0, num5 = 0, num6 = 0;
 	   System.out.println("세 정수를 띄어쓰기로 구분하여 입력하세요 : ");
 	   num4 = sc.nextInt();
+	   num5 = sc.nextInt();
+	   num6 = sc.nextInt();
+	   
+//	   System.out.print((num4 < num5 ? num4 : num5) < num6 ? (num4 < num5 ? num4 : num5) : num6); // 제일 작은
+//	   System.out.print((num4 > num5 ? num4 : num5) > num6 ? (num4 > num5 ? num4 : num5) : num6); // 제일 큰
+	   
+	   int low = (num4 < num5 ? num4 : num5) < num6 ? (num4 < num5 ? num4 : num5) : num6; // 제일 작은
+	   int high = (num4 > num5 ? num4 : num5) > num6 ? (num4 > num5 ? num4 : num5) : num6; // 제일 큰
+	   int center = (num4 != low && num4 != high) ? num4 : ((num5 != low && num5 != high) ? num5 : num6); // 중간
+	   
+	   System.out.println(low + " " + center + " " + high);
+	   
+	   sc.nextLine(); //버퍼ㅣ우기
 	   
 	   
+	   
+//	   System.out.println((num4 < num5 ? num4 : num5) < num6 ? (num4 < num5 ? num4 : num5) : num6 + "\t" + ((num4 > num5 ? num4 : num5) > num6 ? (num4 > num5 ? num4 : num5) : num6));
+	   
+
 	  
 //      5. 사용자로부터 문자열을 입력받고 "X"만 입력했을 경우에만 종료 메시지를 출력하고 그 외에는 입력한 문자열을 출력하기
 	   
@@ -121,6 +142,8 @@ public class Task01 { // 클래스의 중괄호 영역시작
 	   }
 	   System.out.println("프로그램이 종료되었습니다.");
 	   
+	   sc.nextLine(); // 버퍼비우기
+	   
 	   
 	   
 //      6. 사용자가 입력한 숫자에 해당하는 구구단을 출력하기
@@ -142,6 +165,7 @@ public class Task01 { // 클래스의 중괄호 영역시작
 		   System.out.println(num + " X " + i + " = " + num * i);
 	   }
 
+	   sc.nextLine(); // 버퍼비우기
 
 //      7. ATM 메뉴에서 입금, 출금, 잔액 조회를 구현하세요.
 //
@@ -201,5 +225,9 @@ public class Task01 { // 클래스의 중괄호 영역시작
 		   } // switch문의 중괄호 영역끝
 	   }   // while문의 중괄호 영역끝
 	   System.out.println("이용해 주셔서 감사합니다");
+	   
+	   sc.nextLine(); // 버퍼비우기
+	   sc.close(); // 자원해제
+	   
    } // 메인 메소드의 중괄호 영역끝
 } // 클래스의 중괄호 영역끝
