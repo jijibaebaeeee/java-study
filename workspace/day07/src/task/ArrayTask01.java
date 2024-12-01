@@ -200,12 +200,13 @@ public class ArrayTask01 {
 		//   if max, min 비교하여 교체
 		// 자원할당해제
 		
-		Scanner sc = new Scanner(System.in);
-		int[] num = new int[5];
-		int max = 0, min = (int)Math.pow(2, 31); //최대값으로 min 설정
+//		Scanner sc = new Scanner(System.in);
+//		int[] num = new int[5];
+//		int max = 0, min = (int)Math.pow(2, 31); //최대값으로 min 설정
+//		
+//		System.out.println("정수를 5개 입력하세요");
 		
-		System.out.println("정수를 5개 입력하세요");
-		
+		// 각각 받기
 //		num[0] = sc.nextInt();
 //		num[1] = sc.nextInt();
 //		num[2] = sc.nextInt();
@@ -215,41 +216,113 @@ public class ArrayTask01 {
 		
 		//또는
 		
-		for(int i = 0; i < num.length; i++) {
-			System.out.printf("%d번째 정수를 입력하세요 : ", i + 1);
-			num[i] = sc.nextInt();
-			sc.nextLine();
-		}
-		
-		max = num[0];
-		min = num[0];
-		
-		//최대 최소 찾기
-		for(int i = 0; i < num.length; i++) {
-			if(max <= num[i]) {
-				max = num[i];
-			}
-			
-			if(min >= num[i]) {
-				min = num[i];
-			}
-		}
-		
-		
-		System.out.printf("최댓값 : %d\t 최솟값 : %d", max, min);
-		sc.close();
-		
-		
-		
+		// for문 사용하여 받기
+//		for(int i = 0; i < num.length; i++) {
+//			System.out.printf("%d번째 정수를 입력하세요 : ", i + 1);
+//			num[i] = sc.nextInt();
+//			sc.nextLine();
+//		}
+//		
+//		max = num[0];
+//		min = num[0];
+//		
+//		//최대 최소 찾기
+//		for(int i = 0; i < num.length; i++) {
+//			if(max <= num[i]) {
+//				max = num[i];
+//			}
+//			
+//			if(min >= num[i]) {
+//				min = num[i];
+//			}
+//		}
+//		
+//		
+//		System.out.printf("최댓값 : %d\t 최솟값 : %d", max, min);
+//		sc.close();
 		
 		// 8. 사물함의 비밀번호를 설정하고 사용자에게 이용할 사물함 번호와 비밀번호를 입력받아
 		//	 입력된 사물함의 비밀번호와 설정한 비밀번호를 비교하여 일치 여부 출력하기
 		
+		// 로직 구성
+		// 입력 클래스 임포트
+		// 정수형 배열 1개 선언, 문자열형 변수 1개 선언,정수형 변수 3개 선언(비밀번호1,2, 사물함 번호)
+		// 정수의 비밀번호 입력 받기 -> 입력 메소드 -> nextInt()
+		// 버퍼 비우기
+		// 받은 비밀번호를 문자열로 연결해 4자리 수로 만들고 다시 정수형으로 형 변환한다
+		// 맞을 경우  "문이 열렸습니다" 출력
+	
+//		Scanner sc = new Scanner(System.in);
+//		int number = 0, passwd = 0, passwd2 = 0; // 초기 설정할 것;
+//		String pwd = "";
+//		int[] num1 = new int[4]; // 나중에 물어볼 사물함 비밀번호
+//		
+//		System.out.println("원하는 비밀번호를 설정하세요: ");
+//		passwd = sc.nextInt();
+//		sc.nextLine();
+//		
+//		System.out.println("원하는 사물함의 번호를 입력하세요: ");
+//		number = sc.nextInt();
+//		sc.nextLine();
+//		
+//		// 비밀번호 받기
+//		for(int i = 0; i < num1.length; i++) {
+//			System.out.printf("%d번째 비밀번호를 입력하세요", i + 1);
+//			num1[i] = sc.nextInt();
+//		}
+//		
+//		// 받은 비밀번호를 연결하기 위해 하나씩 문자열로 바꾸기
+//		for(int i = 0; i < num1.length; i++) {
+//			pwd += num1[i];
+//		}
+//	
+//		passwd2 = Integer.parseInt(pwd); // 4자리의 정수 생성
+//		
+//		if (passwd == passwd2) {
+//			System.out.printf("%d번 사물함의 문이 열렸습니다\n", number);
+//		}else {
+//			System.out.println("비밀번호가 틀렸습니다.");
+//		}
+		
+
+		
+		
 		
 		//9. 학생 1명의 3과목 총점과 평균(소수점 3자리까지)을 구하고 출력하기
 	    //   3과목은 배열에 입력받아 저장하며 for-each문만 사용(일반 for문 사용금지!)
-
 		
+		// 로직 구성
+		// 입력 클래스 임포트
+		// 정수형 배열 선언, 총점 - 정수형 변수, 평균 - 실수형 변수 선언
+		// 출력 메시지 -> 과목의 점수를 입력하세요 :
+		// 입력 메소드 -> nextInt()
+		// 버퍼 비우기
+		// for-each문(){
+		//		sum += data
+		// for 외부
+		// avg = sum / 3
+		// 출력 메시지 -> printf -> 총점은 %d, 평균은 %.3f 입니다, 
+		
+//		Scanner sc = new Scanner(System.in);
+//		int[] num = new int[3];
+//		int sum = 0;
+//		double avg = 0.0;
+//		
+//		System.out.println("과목의 점수를 차례대로 입력하세요: ");
+//		num[0] = sc.nextInt();
+//		num[1] = sc.nextInt();
+//		num[2] = sc.nextInt();
+//		sc.nextLine();
+//		
+//		for(int data : num) {
+//			sum += data;
+//		}
+//		
+//		 avg = sum / 3;
+//		 
+//		 System.out.printf("총점은 %d, 평균은 %.3f 입니다.", sum, avg);
+//		
+//		 sc.close();
 		
 		
 		
