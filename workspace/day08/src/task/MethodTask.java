@@ -1,5 +1,7 @@
 package task;
 
+import java.util.Scanner;
+
 public class MethodTask {
 	public static void main(String[] args) {
 		
@@ -9,7 +11,7 @@ public class MethodTask {
 		System.out.println(mt.changeSign(10));
 		
 		// 2번 -> 배지수배지수배지수배지수인지 확인해야함
-//		printName("배지수");
+		System.out.println(mt.printName("배지수", 7));
 		
 		// 3번 
 		System.out.println(mt.changeNumber(10));
@@ -23,6 +25,29 @@ public class MethodTask {
 		
 		// 6번
 		mt.changeCase("BaNanA");
+		
+		// 7번
+		int passwd = 0;
+		String id = "";
+		boolean check = false;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ID를 입력하세요: ");
+		id += sc.next();
+		sc.nextLine();
+		
+		System.out.println("비밀번호를 입력하세요: ");
+		passwd = sc.nextInt();
+		
+		check = mt.login(id, passwd);
+		
+		if(check) {
+			System.out.println("관리자님 환영합니다.");
+		}else {
+			System.out.println("잘못 입력했습니다.");
+		}
+		
+		
 		
 	}
     // 1. 음수를 양수로, 양수를 음수로 바꿔주는 메소드
@@ -46,11 +71,16 @@ public class MethodTask {
     // 2. 이름과 정수를 받아와서 정수만큼 이름을 출력하는 메소드
     // 매개변수 o, 리턴값 o (?)
     // 메소드명 : printName
+	// 정수만큼 이름을 가로로 반복해서 추가
+	// for문 사용하여 반복
 	
-	void printName(String name, int num) {
+	String printName(String name, int num) {
+		String myname = "";
+		
 		for(int i = 0; i < num; i++) {
-			System.out.println(name);
+			myname += name;
 		}
+		return myname;
 	}
 
     // 3. 10이하의 숫자는 1로 10을 초과하는 숫자는 100으로 반환하는 메소드
@@ -94,7 +124,11 @@ public class MethodTask {
     // 매개변수o(배열),리턴값 x
     // 메소드명 printMinMax
 	// void printMinMax(정수형 배열){
-	// 
+	// 무한대와 0을 구현하기 위해 double 형 사용
+	// 각 배열의 요소가 max 보다 큰 경우
+	// 각 배열의 요소가 min 보다 작은 경우 
+	// max와 min 값을 갱신한다.
+	// 반복이 끝나면 출력이 되게하기
 	
 	void printMinMax(int[] num) {
 		double max = -1.0e100, min = 1.0e100;
@@ -154,14 +188,12 @@ public class MethodTask {
 	boolean login(String id, int num) {
 		boolean check = false;
 		
-		return check;
+		if(id.equals("admin") && (num == 1234) ) {
+			return true;
+		}else {
+			return check;
+		}
 	}
-	
-
-	
-	
-	
-	
 	
 	
 }
