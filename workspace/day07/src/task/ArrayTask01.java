@@ -284,6 +284,31 @@ public class ArrayTask01 {
 //			System.out.println("비밀번호가 틀렸습니다.");
 //		}
 		
+//		String mainMsg = "번 사물함의 비밀번호 설정 : ";
+//		
+//		for(int i = 0; i < num1.length; i++) {
+//			System.out.println(i + 1 + mainMsg );
+//		}
+//		for(int i = 0; i < arPw.length; i++) {
+//      System.out.println(i + 1 + mainMsg);
+//      arPw[i] = sc.nextInt();
+//   }
+////   for(int data : arPw) {
+////      System.out.println(data);
+////   }
+//   
+//		System.out.println(choiceMsg);
+//   		choice = sc.nextInt();
+//   
+//   		System.out.println(inputMsg);
+//   		inputPw = sc.nextInt();
+//   
+//   		if(arPw[choice - 1] == inputPw) {
+//	   System.out.println("비밀번호 일치");
+//   		}else {
+//   			System.out.println("비밀번호 불일치");
+//   		}
+
 
 		
 		
@@ -325,6 +350,29 @@ public class ArrayTask01 {
 //		 sc.close();
 		
 		
-		
+	      int[] scores = new int[3];
+	      int index = 0; // for-each문에서 사용하기 위한 변수
+	      int total = 0;
+	      double avg = 0.0;
+
+//	      System.out.println("3과목의 점수를 입력하세요 : ");
+//	      for(int i = 0; i < scores.length; i++) {
+//	         scores[i] = sc.nextInt();
+//	      }
+//	      
+	      for (int score : scores) {
+	         System.out.println("점수 입력 : ");
+	         score = sc.nextInt();
+	         scores[index++] = score;
+	      }
+
+	      for (int socre : scores) {
+	         total += socre;
+	      }
+
+	      avg = (double) total / scores.length;
+	      System.out.printf("총점 : %d\n", total);
+	      System.out.printf("총점 : %.3f\n", avg);
+
 	}
 }

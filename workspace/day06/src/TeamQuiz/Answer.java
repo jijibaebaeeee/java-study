@@ -33,18 +33,18 @@ public class Answer {
       // 4-2) 내부 for문 안에서 : printf("%d * %d = %d\t", j, i, num*i);
       // 4-3) 외부 for문 안에서 : 줄바꿈 println();
 		
-		Scanner sc = new Scanner(System.in);
-		int num = 0;
-		System.out.println("구구단을 어디까지 출력할까요? :");
-		num = sc.nextInt();
-		sc.nextLine();
-		
-		for(int i = 1; i <= 9; i++) {
-			for(int j = 1; j <= num; j++) {
-				System.out.printf("%d * %d = %d\t", j, i, num*i);
-			}
-			System.out.println();
-		}
+//		Scanner sc = new Scanner(System.in);
+//		int num = 0;
+//		System.out.println("구구단을 어디까지 출력할까요? :");
+//		num = sc.nextInt();
+//		sc.nextLine();
+//		
+//		for(int i = 1; i <= 9; i++) {
+//			for(int j = 1; j <= num; j++) {
+//				System.out.printf("%d * %d = %d\t", j, i, num*i);
+//			}
+//			System.out.println();
+//		}
 		
 
 //   문제 2. UP&DOWN 게임
@@ -79,29 +79,29 @@ public class Answer {
 //   while문 외부
 //      syso("정답입니다" + cnt + "번 째에 맞혔습니다!"); 
 //		
-		final int ANSWER = 39;
-		int choice = 0, cnt = 1;
-		System.out.println("1 ~ 50까지의 정수를 입력하세요 : ");
-		choice = sc.nextInt();
-		
-		while(ANSWER != choice) {
-			if(choice < 1 || choice > 50) {
-				System.out.println("1 ~ 50까지의 숫자만 입력해 주세요 : ");
-			}else if(choice > ANSWER) {
-				System.out.println("down");
-				System.out.println("값을 다시 입력해 주세요 : ");
-			}else {
-				System.out.println("up");
-				System.out.println("값을 다시 입력해 주세요 : ");
-			}
-			
-		    cnt++;
-		    choice = sc.nextInt();
-		    sc.nextLine();
-		}
-		System.out.println("정답입니다 " + cnt + "번 째에 맞혔습니다!");
-		
-		sc.close();
+//		final int ANSWER = 39;
+//		int choice = 0, cnt = 1;
+//		System.out.println("1 ~ 50까지의 정수를 입력하세요 : ");
+//		choice = sc.nextInt();
+//		
+//		while(ANSWER != choice) {
+//			if(choice < 1 || choice > 50) {
+//				System.out.println("1 ~ 50까지의 숫자만 입력해 주세요 : ");
+//			}else if(choice > ANSWER) {
+//				System.out.println("down");
+//				System.out.println("값을 다시 입력해 주세요 : ");
+//			}else {
+//				System.out.println("up");
+//				System.out.println("값을 다시 입력해 주세요 : ");
+//			}
+//			
+//		    cnt++;
+//		    choice = sc.nextInt();
+//		    sc.nextLine();
+//		}
+//		System.out.println("정답입니다 " + cnt + "번 째에 맞혔습니다!");
+//		
+//		sc.close();
 
 //		--------------------JAVA요팀------------------------
 		
@@ -122,32 +122,32 @@ public class Answer {
 		// }while(!(짜장, 돈까스, 피자, 햄버거);
 	    // if문으로 메뉴에 따른 출력문 작성
 		
-		Scanner sc = new Scanner(System.in);
-		String choice = "";
-		String msg = "점심 메뉴 선택 (한글로 메뉴 이름 작성)\n "
-				+ "짜장 (5000원), "
-				+ "돈까스 (8000원), "
-				+ "피자 (25000원), "
-				+ "햄버거 (6000원)";
-		
-		
-		do {
-			System.out.println(msg);
-			choice = sc.next();
-			sc.nextLine();
-			
-		}
-		while(!("짜장".equals(choice) || "돈까스".equals(choice) || "피자".equals(choice) || "햄버거".equals(choice)));
-		
-		if("짜장".equals(choice)) {
-			System.out.println("짜장은 5000원입니다.");
-		}else if("돈까스".equals(choice)) {
-			System.out.println("돈까스는 8000원입니다");
-		}else if("피자".equals(choice)) {
-			System.out.println("피자는 25000원입니다");
-		}else if("햄버거".equals(choice)) {
-			System.out.println("햄버거는 6000원입니다.");
-		}
+//		Scanner sc = new Scanner(System.in);
+//		String choice = "";
+//		String msg = "점심 메뉴 선택 (한글로 메뉴 이름 작성)\n "
+//				+ "짜장 (5000원), "
+//				+ "돈까스 (8000원), "
+//				+ "피자 (25000원), "
+//				+ "햄버거 (6000원)";
+//		
+//		
+//		do {
+//			System.out.println(msg);
+//			choice = sc.next();
+//			sc.nextLine();
+//			
+//		}
+//		while(!("짜장".equals(choice) || "돈까스".equals(choice) || "피자".equals(choice) || "햄버거".equals(choice)));
+//		
+//		if("짜장".equals(choice)) {
+//			System.out.println("짜장은 5000원입니다.");
+//		}else if("돈까스".equals(choice)) {
+//			System.out.println("돈까스는 8000원입니다");
+//		}else if("피자".equals(choice)) {
+//			System.out.println("피자는 25000원입니다");
+//		}else if("햄버거".equals(choice)) {
+//			System.out.println("햄버거는 6000원입니다.");
+//		}
 		
 //		문제 2 : 문자의 아스키코드 값 확인
 //		   사용자로부터 문자를 입력받아 아스키코드 값을 확인하고 입력받은 문자를 아스키코드 값으로 변환한다
@@ -162,21 +162,21 @@ public class Answer {
 		// while(!A){}
 		// while문 내부 -> 입력한 문자에 대한 아스키코드 값 출력 (형변환)
 		
-		final char END = 'A';
-		char choice = ' ';
-		
-		System.out.println("문자를 입력하세요(종료시 A입력) : ");
-		choice= sc.next().charAt(0);
-		sc.nextLine();
-		
-		while(choice != END) {
-			System.out.printf("%c 의 아스키코드 값은 %d입니다.\n", choice, (int)choice);
-			System.out.println("문자를 입력하세요(종료시 A입력) : ");
-			choice = sc.next().charAt(0);
-			sc.nextLine();
-		}
-		System.out.println("프로그램이 종료되었습니다.");
-		sc.close();
+//		final char END = 'A';
+//		char choice = ' ';
+//		
+//		System.out.println("문자를 입력하세요(종료시 A입력) : ");
+//		choice= sc.next().charAt(0);
+//		sc.nextLine();
+//		
+//		while(choice != END) {
+//			System.out.printf("%c 의 아스키코드 값은 %d입니다.\n", choice, (int)choice);
+//			System.out.println("문자를 입력하세요(종료시 A입력) : ");
+//			choice = sc.next().charAt(0);
+//			sc.nextLine();
+//		}
+//		System.out.println("프로그램이 종료되었습니다.");
+//		sc.close();
 		
 // -----------------------I팀-------------------------
 //		1. 업다운문제
@@ -192,31 +192,31 @@ public class Answer {
 		// while(4회 초과시){}
 		// while 내부 -> 비교연산에 따른 출력문
 		
-		Scanner sc = new Scanner(System.in);
-		final int NUM = 23;
-		int choice = 0, cnt = 1;
-		
-		System.out.println("숫자를 입력하세요 : ");
-		choice = sc.nextInt();
-		sc.nextLine();
-		
-		while(cnt < 3) {
-			if(choice == NUM) {
-				System.out.println("정답입니다.");
-				break;
-			}else if(choice > NUM){
-				System.out.println("down");
-			}else {
-				System.out.println("up");
-			}
-			cnt++;
-		System.out.println("숫자를 입력하세요 : ");
-		
-		choice = sc.nextInt();
-		sc.nextLine();
-			
-		}
-		System.out.println("횟수 초과로 프로그램이 종료되었습니다.");
+//		Scanner sc = new Scanner(System.in);
+//		final int NUM = 23;
+//		int choice = 0, cnt = 1;
+//		
+//		System.out.println("숫자를 입력하세요 : ");
+//		choice = sc.nextInt();
+//		sc.nextLine();
+//		
+//		while(cnt < 3) {
+//			if(choice == NUM) {
+//				System.out.println("정답입니다.");
+//				break;
+//			}else if(choice > NUM){
+//				System.out.println("down");
+//			}else {
+//				System.out.println("up");
+//			}
+//			cnt++;
+//		System.out.println("숫자를 입력하세요 : ");
+//		
+//		choice = sc.nextInt();
+//		sc.nextLine();
+//			
+//		}
+//		System.out.println("횟수 초과로 프로그램이 종료되었습니다.");
 		
 //		2. OX 퀴즈 (2문제만 존재함) 
 //		   1번 못 맞추면 프로그램 종료
@@ -240,30 +240,30 @@ public class Answer {
 		// 버퍼비우기
 		// 
 		
-		char answer = ' ';
-		String msg1 = "1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 : O/X";
-		String msg2 = "2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : O/X";
-		
-		System.out.println(msg1);
-		answer = sc.next().charAt(0);
-		sc.nextLine();
-		
-		if(answer == 'X') {
-			System.out.println("정답입니다 2번문제로 넘어갑니다");
-			System.out.println(msg2);
-			answer = sc.next().charAt(0);
-			sc.nextLine();
-			
-			if(answer == 'O') {
-				System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
-			}else if(answer == 'X') {
-				System.out.println("틀렸습니다. 프로그램을 종료합니다.");
-			}
-		}else if(answer == 'O') {
-			System.out.println("틀렸습니다. 프로그램을 종료합니다.");
-		}
-		
-		sc.close();
+//		char answer = ' ';
+//		String msg1 = "1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 : O/X";
+//		String msg2 = "2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : O/X";
+//		
+//		System.out.println(msg1);
+//		answer = sc.next().charAt(0);
+//		sc.nextLine();
+//		
+//		if(answer == 'X') {
+//			System.out.println("정답입니다 2번문제로 넘어갑니다");
+//			System.out.println(msg2);
+//			answer = sc.next().charAt(0);
+//			sc.nextLine();
+//			
+//			if(answer == 'O') {
+//				System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
+//			}else if(answer == 'X') {
+//				System.out.println("틀렸습니다. 프로그램을 종료합니다.");
+//			}
+//		}else if(answer == 'O') {
+//			System.out.println("틀렸습니다. 프로그램을 종료합니다.");
+//		}
+//		
+//		sc.close();
 		
 //		----------------------JAV탕팀-----------------------
 		//문제1) 입력한 갯수만큼 늘어나는 반칸 다이아 만들기
@@ -282,31 +282,31 @@ public class Answer {
 		//	 for( 공백담당 )    <= 아래부분 한 줄 작은 삼각형까지 담당
 		//   for( 별찍기담당 )
 		
-		Scanner sc = new Scanner(System.in);
-		int num = 0;
-		System.out.println("정수를 입력하세요: ");
-		num = sc.nextInt();
-		sc.nextLine();
-		
-		for(int i = 1; i <= num; i++) {
-			for(int j = 5; j >= i; j--) {
-				System.out.print(" ");
-			}
-			for(int j = 1; j < i+1; j++) {
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-		
-		for(int i = 1; i < num; i++) {
-			for(int j = 0; j < i; j++) {
-				System.out.printf(" ");
-			}
-			for(int j = 5; j >= i; j--) {
-				System.out.printf("* ");
-			}
-			System.out.println();
-		}
+//		Scanner sc = new Scanner(System.in);
+//		int num = 0;
+//		System.out.println("정수를 입력하세요: ");
+//		num = sc.nextInt();
+//		sc.nextLine();
+//		
+//		for(int i = 1; i <= num; i++) {
+//			for(int j = 5; j >= i; j--) {
+//				System.out.print(" ");
+//			}
+//			for(int j = 1; j < i+1; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+//		
+//		for(int i = 1; i < num; i++) {
+//			for(int j = 0; j < i; j++) {
+//				System.out.printf(" ");
+//			}
+//			for(int j = 5; j >= i; j--) {
+//				System.out.printf("* ");
+//			}
+//			System.out.println();
+//		}
 
 		
 //		문제2) 금액을 넣어주세요 : 입력값
@@ -329,64 +329,64 @@ public class Answer {
 		// while(4가 아닐때){}
 		// while내부 -> switch문 사용
 		
-		int choice = 0, balance = 0;
-		String msg = "-------메뉴-------\n"
-				+ "1. 콜라 : 2500\n"
-				+ "2. 사이다 : 2000\n"
-				+ "3. 커피 : 4000\n"
-				+ "4. 잔액반환\n";
-		
-		System.out.println("투입 금액을 입력하세요: ");
-		balance = sc.nextInt();
-		sc.nextLine();
-		
-		while(choice !=4) {
-			System.out.println(msg);
-			System.out.printf("잔액 : %d\n", balance);
-			System.out.println("원하는 메뉴를 선택하세요: ");
-			choice = sc.nextInt();
-			sc.nextLine();
-			switch(choice) {
-			case 1:
-				if((balance - 2500) < 0 ) {
-					System.out.println("잔액이 적어 구입할 수 없습니다.");
-					   choice = 4;
-					   break;
-				   }else {
-					   balance -= 2500;
-					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
-					   break;
-				   }
-			case 2:
-				if((balance - 2000) < 0 ) {
-					System.out.println("잔액이 적어 구입할 수 없습니다.");
-					   choice = 4;
-					   break;
-				   }else {
-					   balance -= 2000;
-					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
-					   break;
-				   }
-			case 3:
-				if((balance - 4000) < 0 ) {
-					System.out.println("잔액이 적어 구입할 수 없습니다.");
-					   choice = 4;
-					   break;
-				   }else {
-					   balance -= 4000;
-					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
-					   break;
-				   }
-			case 4:
-				System.out.println("안녕히 가세요");
-				choice = 4;
-				break;
-				
-		    default:
-				System.out.println("메뉴에 없는 번호입니다. 다시 시도해 주세요");
-				
-			}
-		}
-		sc.close();
+//		int choice = 0, balance = 0;
+//		String msg = "-------메뉴-------\n"
+//				+ "1. 콜라 : 2500\n"
+//				+ "2. 사이다 : 2000\n"
+//				+ "3. 커피 : 4000\n"
+//				+ "4. 잔액반환\n";
+//		
+//		System.out.println("투입 금액을 입력하세요: ");
+//		balance = sc.nextInt();
+//		sc.nextLine();
+//		
+//		while(choice !=4) {
+//			System.out.println(msg);
+//			System.out.printf("잔액 : %d\n", balance);
+//			System.out.println("원하는 메뉴를 선택하세요: ");
+//			choice = sc.nextInt();
+//			sc.nextLine();
+//			switch(choice) {
+//			case 1:
+//				if((balance - 2500) < 0 ) {
+//					System.out.println("잔액이 적어 구입할 수 없습니다.");
+//					   choice = 4;
+//					   break;
+//				   }else {
+//					   balance -= 2500;
+//					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
+//					   break;
+//				   }
+//			case 2:
+//				if((balance - 2000) < 0 ) {
+//					System.out.println("잔액이 적어 구입할 수 없습니다.");
+//					   choice = 4;
+//					   break;
+//				   }else {
+//					   balance -= 2000;
+//					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
+//					   break;
+//				   }
+//			case 3:
+//				if((balance - 4000) < 0 ) {
+//					System.out.println("잔액이 적어 구입할 수 없습니다.");
+//					   choice = 4;
+//					   break;
+//				   }else {
+//					   balance -= 4000;
+//					   System.out.printf("구입에 성공했습니다. 총 잔액은 %d입니다.\n", balance);
+//					   break;
+//				   }
+//			case 4:
+//				System.out.println("안녕히 가세요");
+//				choice = 4;
+//				break;
+//				
+//		    default:
+//				System.out.println("메뉴에 없는 번호입니다. 다시 시도해 주세요");
+//				
+//			}
+//		}
+//		sc.close();
 	}
 }
