@@ -5,99 +5,113 @@ import java.util.Scanner;
 public class TeamTask02 {
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+//		10진수 → 2진수 변환하기(4bit)
+		
+//		0~15범위 밖의 숫자를 입력받을 시 “잘못된 입력입니다 다시 입력해주세요 : “를 출력하고 제대로 받을 때까지 반복
+//
+//		0은 0으로 만든 5*5크기의 0으로 만들 것
+//
+//		1은 1으로 만든 5*5크기의 1로 만들 것 (1은 중간에 있어야함 왼쪽 또는 오른쪽으로 치우치면 안됨)
+//
+//		10진수를 2진수로 변환하는 “toBinaryString()” 사용금지
+//
+//		0또는 1을 출력한 뒤 줄바꿈을 할 것
+//
+//		메소드로 만들어서 사용할 것 : 2진수로 변환하는 코드, 0을 출력하는 코드, 1을 출력하는 코드 (총 3가지)
+//
+//		(전부 매개변수 자유, 리턴값 자유, static 사용 불가)
+		
+
+		
+		// 0~15까지의 숫자를 입력받은 뒤 이를 4비트의 이진수로 출력
 		TeamTask02 tt = new TeamTask02();
+		Scanner sc = new Scanner(System.in);
 		
-		// 10 x 10 인 2차원 배열 선언 및 정수형, 실수형 변수 선언
-		int[][] ar = new int[10][10];
-		int num1 = 0, num2 = 0, cnt = 0, total = 0;
-		double avg = 0.0;
-		
-		// 배열에 값 저장
-		tt.insertValue(ar);
-		
-		System.out.println("두 수를 띄어쓰기로 구분해서 입력하세요 : ");
-		
-		// 사용자로부터 두 수를 받기
-		num1 = sc.nextInt();
-		num2 = sc.nextInt();
-		sc.nextLine();
-		
-		// 입력값이 1~100인지 확인
-		while(tt.checkValue(num1, num2)) {
-			System.out.println("1부터 100사이의 값을 입력하세요");
-			num1 = sc.nextInt();
-			num2 = sc.nextInt();
-			sc.nextLine();
+		int num = 0;
+		int[] binaryArray = new int[4];
+
+		// 입력 메시지 출력
+		System.out.print("0부터 15까지의 숫자를 입력해주세요 : ");
+		num = sc.nextInt();
+		sc.nextLine(); // void buffer
+
+		while (num > 15 || num < 0) {
+			System.out.print("잘못된 입력입니다 다시 입력해주세요 : ");
+			num = sc.nextInt();
+			sc.nextLine(); // void buffer
 		}
 		
-		// 배수들의 개수
-		cnt = tt.findMultiple(ar, num1, num2); 
-		
-		// 배수들의 합
-		total = tt.findValue(ar, num1, num2);
-		
-		// 배수들의 평균
-		avg = tt.findValue(total, cnt);
-		
+		//10to2
+		tt.decimalToBinary(binaryArray, num);
+
 		// 출력
-		tt.findValue(num1, num2, cnt, total, avg);
+		for (int data : binaryArray) {
+			if (data == 0) {
+				tt.print0();
+				System.out.println();
+			} else {
+				tt.print1();
+				System.out.println();
+			}
+		}
 		
 		sc.close();
-		
-	}
-	
-	// 2차원 배열에 값을 저장해주는 메소드
-	void insertValue(int[][] ar) {
-		int value = 1;
-		
-		// 1 ~ 100 값 저장
-		for(int i = 0; i < ar.length; i++) {
-			for(int j = 0; j < ar[i].length; j++) {
-				ar[i][j] = value++;
-			}
-		}
-	}
-	
-	// 1~100 사이의 값인지 확인하는 메소드
-	boolean checkValue(int num1, int num2) {
-		boolean check = (num1 < 1 || num1 > 100) || (num2 < 1 || num2 > 100);
-		return check;
+
 	}
 	
 	
-	// 배수의 개수를 구하는 메소드
-	int findMultiple(int[][] ar, int num1, int num2) {
-		int cnt = 0;
-		for(int i = 0; i < ar.length; i++) {
-			for(int j = 0; j < ar[i].length; j++) {
-				if(ar[i][j] % num1 == 0 || ar[i][j] % num2 == 0) {
-					cnt++;
+	// 🌚🌚🌚🌚🌚
+	// 🌚     🌚
+	// 🌚     🌚
+	// 🌚     🌚
+	// 🌚🌚🌚🌚🌚
+	
+	//print 0
+	//지난번에 했던 속이 빈 사각형 참고
+	//같은 형식으로 0,4번째 행렬 채움
+	void print0() {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				if (i == 0 || i == 4 || j == 0 || j == 4) {
+					System.out.print("0");
+				} else {
+					System.out.print(" ");
 				}
 			}
+			System.out.println();
 		}
-		return cnt;
 	}
 	
-    // 배수들의 합계를 구하는 메소드
-	int findValue(int[][] ar, int num1, int num2) {
-		int total = 0;
-		for(int i = 0; i < ar.length; i++) {
-			for(int j = 0; j < ar[i].length; j++) {
-				if(ar[i][j] % num1 == 0 || ar[i][j] % num2 == 0) {
-					total += ar[i][j];
+	//print 1
+	//중간인 2열만 1로 채움
+	void print1() {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				if (j == 2) {
+					System.out.print("1");
+				} else {
+					System.out.print(" ");
 				}
 			}
+			System.out.println();
 		}
-		return total;
 	}
-	// 배수들의 평균을 구하는 메소드
-	double findValue(int total, int cnt) {
-		return (double)total / cnt ;
-	}
-	
-	// 결과를 출력하는 메소드
-	void findValue(int num1, int num2, int cnt, int total, double avg) {
-		System.out.printf("%d와 %d의 배수는 총 %d개 이고, 합은 %d, 평균은 %.2f 입니다.", num1, num2, cnt, total, avg);
+
+	void decimalToBinary(int[] array, int num) {
+		// 이진수로 변환 8421
+		// 이진수로 변환시키는 방법 중 10진수를 2로 나누었을 때 나머지들로
+		// 계산하는 방법 사용함
+		// 뒤의 배열부터 채운 이유는 계산 방법 때문임 (10to2 아래 참고)
+		for (int i = array.length - 1; i >= 0; i--) {
+			if (num / 2 >= 1) {
+				array[i] = num % 2;
+				num /= 2;
+			} else if (num == 1) {
+				array[i] = 1;
+				break;
+			} else {
+				break;
+			}
+		}
 	}
 }
