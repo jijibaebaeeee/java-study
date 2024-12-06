@@ -47,6 +47,8 @@ public class MethodTask {
 			System.out.println("잘못 입력했습니다.");
 		}
 		
+		
+		
 	}
     // 1. 음수를 양수로, 양수를 음수로 바꿔주는 메소드
     // 매개변수o, 리턴값o
@@ -162,9 +164,9 @@ public class MethodTask {
 		String result = "";
 		for(int i = 0; i < line.length(); i++) {
 			if(line.charAt(i) < 97) {
-				result += (char)(line.charAt(i) + 32);
+				result += (char)((int)line.charAt(i) + 32);
 			}else {
-				result += (char)(line.charAt(i) - 32);
+				result += (char)((int)line.charAt(i) - 32);
 			}
 		}
 		
@@ -192,6 +194,4 @@ public class MethodTask {
 			return check;
 		}
 	}
-	
-	
 }
