@@ -16,10 +16,30 @@ public class Animal {
 	int age;
 	String sort;
 	
+	
+	// 인수 1개 요하는 생서자 생성 이름
+	public Animal(String name) {
+
+		this.name = name;
+	}
+
+
+	// 인수 2개 요하는 생성자 생성 이름 + 나이
+	public Animal(String name, int age) {
+
+		this.name = name;
+		this.age = age;
+	}
+	
+	// 매개 변수 3개 생성자
+	
+	
+	
 	void eat() {
 		System.out.println(this.name + "이/가 밥을 먹습니다");
 	}
 	
+
 	void play() {
 		System.out.println(this.name + "이/가 신나게 놉니다");
 	}
