@@ -1,11 +1,11 @@
-package homework;
+package bookExample;
 
-public class Chapter08 {
+public class Chapter8 {
 	public static void main(String[] args) { // 메인 메소드의 시작 영역
 		printHello(); // 메서드 호출
 		
 		// 예제 8-3 다른 클래스에 있는 메서드 호출하기 (같은 클래스에 있는 run 호출)
-		Chapter08 cp = new Chapter08(); // 객체생성
+		Chapter8 cp = new Chapter8(); // 객체생성
 		cp.run(); // 메서드 호출
 		
 		// 예제 8-5 2개 이상의 메서드 선언하기
