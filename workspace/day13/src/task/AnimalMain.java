@@ -39,36 +39,54 @@ public class AnimalMain {
 //		Dog dog = new Dog();  // Dog 클래스 타입의 객체 생성
 //		Mouse mouse = new Mouse(); // Mouse 클래스 타입의 객체 생성
 		
-		// 강사님의 간결한 풀이 
+		
 		Animal[] ani = {new Cat(), new Dog(), new Mouse()};
-		
-//		cat.cry(); // Cat 클래스에서 오버라이딩 된 cry 메소드 출력
-//		dog.cry(); // Dog 클래스에서 오버라이딩 된 cry 메소드 출력
-//		mouse.cry(); // Mouse 클래스에서 오버라이딩 된 cry 메소드 출력
-		
-//		printCrying(cat); // 메소드 호출
-//		printCrying(dog); // 메소드 호출
-//		printCrying(mouse); // 메소드 호출
-		
-
-		for(Animal animal : ani) {
-			printCrying(animal);
+	
+		check(ani);
+//		// 강사님의 간결한 풀이 
+//		Animal[] ani = {new Cat(), new Dog(), new Mouse()};
+//		
+////		cat.cry(); // Cat 클래스에서 오버라이딩 된 cry 메소드 출력
+////		dog.cry(); // Dog 클래스에서 오버라이딩 된 cry 메소드 출력
+////		mouse.cry(); // Mouse 클래스에서 오버라이딩 된 cry 메소드 출력
+//		
+////		printCrying(cat); // 메소드 호출
+////		printCrying(dog); // 메소드 호출
+////		printCrying(mouse); // 메소드 호출
+//		
+//
+//		for(Animal animal : ani) {
+//			printCrying(animal);
+//		}
+//		
+//		
+//		
+	}
+	static void check(Animal[] animal) {
+		for(Animal ani : animal) {
+			ani.cry();
+			if(ani instanceof Cat) {
+				((Cat)ani).play();
+			}else if(ani instanceof Dog) {
+				((Dog)ani).walk();
+			}else if(ani instanceof Mouse) {
+				((Mouse)ani).sleep();
+			}
 		}
-		
-		
-		
 	}
 	
-	static void printCrying(Animal animal){
-		animal.cry();
-		if(animal instanceof Dog) {
-			((Dog)animal).walk();
-		}else if(animal instanceof Cat) {
-			((Cat)animal).play();
-		}else if(animal instanceof Mouse){
-			((Mouse)animal).cry();
-		}
-		
-	}
+	
+//	
+//	static void printCrying(Animal animal){
+//		animal.cry();
+//		if(animal instanceof Dog) {
+//			((Dog)animal).walk();
+//		}else if(animal instanceof Cat) {
+//			((Cat)animal).play();
+//		}else if(animal instanceof Mouse){
+//			((Mouse)animal).cry();
+//		}
+//		
+//	}
 
 }

@@ -34,9 +34,7 @@ public class StudentMain {
 		st1.eng = 30;
 		st1.math = 100;
 		System.out.println(st1.getTotal());
-		
-		
-		
+
 		
 	}
 }

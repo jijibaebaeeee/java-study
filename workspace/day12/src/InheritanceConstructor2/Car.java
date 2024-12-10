@@ -22,6 +22,7 @@ public class Car {
 	}
 
 
+	//매개변수를 풀로 가지는 생성자도 생성
 	public Car(String brand, String color, int price) {
 		super();
 		this.brand = brand;

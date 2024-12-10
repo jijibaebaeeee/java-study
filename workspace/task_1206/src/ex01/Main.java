@@ -61,7 +61,6 @@ public class Main {
 		p2.avg = p2.findavg(p2.s1, p2.s2);
 		
 		
-		if(p1.avg)
 		
 	}
 	

@@ -9,10 +9,10 @@ public class Cat extends Animal {
 //     play() 스크래치 놀이를 합니다 출력
 	
 	//메소드 오버라이딩
-	@Override
-	void cry() {
-		System.out.println("야옹하고 웁니다");
-	}
+//	@Override
+//	void cry() {
+//		System.out.println("야옹하고 웁니다");
+//	}
 	
 	void play() {
 		System.out.println("스크래치 놀이를 합니다");

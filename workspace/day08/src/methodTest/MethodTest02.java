@@ -12,9 +12,7 @@ public class MethodTest02 {
 		MethodTest02 mt = new MethodTest02();  // MethodTest02 클래스에서 만들어진 모든 것이 mt라는 참조변수에 저장된다.
 		mt.add(10, 20); // return 값이 없는 것은 출력문에 쓸 수 없다. (인수)
 		
-		
-		
-		
+
 		
 	}
 	

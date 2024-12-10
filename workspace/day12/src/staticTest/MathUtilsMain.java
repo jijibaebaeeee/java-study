@@ -8,5 +8,7 @@ public class MathUtilsMain {
 		
 		//round 호출
 		System.out.println(MathUtils.round(5.50));
+		
+		MathUtils.getMax(10, 40);
 	}
 }

@@ -10,6 +10,7 @@ public class TvMain {
 		Tv2 tv2 = new Tv2();
 		System.out.println(tv2);
 		
+		System.out.println(tv2.ch);
 		tv2.netflix();
 		
 	}

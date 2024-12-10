@@ -26,6 +26,7 @@ public class Main {
 		 */
 		
 		Scanner sc = new Scanner(System.in);
+		
 		int[] ar = new int[5];
 		double max = 1.0e-100, min = 1.0e100;
 		int maxIndex = 0, minIndex = 0;		

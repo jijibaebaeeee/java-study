@@ -12,7 +12,7 @@ public class Animal {
 
 	
 	//생성자
-	public Animal(String name) {
+	public Animal(String name) { //부모가 매개변수를 가지는 생성자가 있으니. 자식은 다 가진다
 		super();
 		this.name = name;
 	}
