@@ -1,5 +1,5 @@
 package teamtask02;
-
+// JAV탕문제
 import java.util.Scanner;
 
 public class TeamTask03 {
