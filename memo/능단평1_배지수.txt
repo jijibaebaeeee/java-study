@@ -1,0 +1,42 @@
+나에게 주는 피드백
+
+Main에서 Zoo 타입의 배열 3칸을 만들었음
+ZooReview z = new ZooReview(3);
+
+배열 객체 z에 동물을 넣기위해 하나씩 넣었음
+z.addAnimal(new PetReview("멍이"));
+z.addAnimal(new PetReview("냥이"));
+z.addAnimal(new PetReview("아이언맨"));
+
+-> 위의 코드에서 계속 오류가 났음 . 확인해보니
+
+void addAnimal(AnimalReview[] a) { // 업캐스팅하여 배열 전달
+
+이라고 적어놨음 -> 배열 연산자 [] 를 지우니 오류가 안남
+
+정수형 배열을 전달할 때 매개변수로 int[] arr 로 전달을 했었던 기억이 있어서 똑같이 AnimalReview[] a 로 한 것 같은데
+애초에 잘못 생각한 것이 하나씩 객체의 참조값을 넣어야 하기에 매개변수로 배열을 넣어주면 안되는 것이다.
+또 addAnimal 메소드에 정작 객체를 넣는 코드는 없었다.
+
+animals[animalCount] = a;       // 추가함
+
+ZooReview 클래스의 printAllAnimals() 에서도 문제가 있었다
+
+void printAllAnimals(Animal[] ani) 
+
+매개변수가 없어야 하는데 만들어버렸고, 또 배열객체를 매개변수로 받으려고 했다.
+
+int[] arr
+Animal[] ani 
+의 차이보다는
+메인 메소드가 아닌 클래스에서 선언된 필드가 어떻게 메인 메소드에 영향을 미치는지를 헷갈리는 것 같다. (사실 아직도 헷갈린다...★)
+
+매개변수 없이 작성한 것은 다음과 같았다
+
+void printAllAnimals() {
+   for(AnimalReview animal : animals) {
+      animal.performActions();
+   }
+}
+
+메인에서 선언만하면 배열객체에 접근할 수 있었고, for-each문을 이용해서 하나씩 출력만하면 오버라이딩 되어있기 때문에 각 객체의 출력을 얻을 수 있었다.
