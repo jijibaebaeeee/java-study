@@ -19,8 +19,8 @@ public interface FunctionalInter3 {
 		};
 		
 		//람다식 바꾸기
-		FunctionalInter4 fi = (String line1, String line2) -> line1 + line2;
-		
+		FunctionalInter4 fi = (line1, line2) -> line1 + line2;
+		System.out.println(fi);
 		//람다식 출력
 		System.out.println(fi.combineString("배지수 ", "집가자"));
 	}
