@@ -1,4 +1,4 @@
-package bookExample;
+package chapter11;
 //예제 11-17 메서드 오버라이딩
 
 class Animal2{ // 부모클래스

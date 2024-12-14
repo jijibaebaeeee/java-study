@@ -1,4 +1,4 @@
-package bookExample;
+package chapter11;
 //예제 11-6 강제형변환1
 public class Bike {
 	//필드

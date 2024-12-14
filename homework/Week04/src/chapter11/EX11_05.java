@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 // 예제 11-5 클래스의 자동 타입 변환-5
 public class EX11_05 { // 메인클래스
 	public static void main(String[] args) {

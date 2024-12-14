@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-12 Samsong 컴퓨터 객체를 만들어줄 클래스
 public class EX11_12 { // 메인클래스
 	public static void main(String[] args) {

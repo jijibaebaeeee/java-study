@@ -1,5 +1,7 @@
-package bookExample;
+package chapter11;
 //예제 11-2 클래스의 자동 타입 변환
+
+import chapter10.Car;
 
 class Car1{ // Car 클래스 선언
 	

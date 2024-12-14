@@ -1,4 +1,4 @@
-package bookExample;
+package chapter11;
 //예제 11-1 클래스의 자동 타입 변환-1
 
 class Parent1{ // Parent1 클래스 생성

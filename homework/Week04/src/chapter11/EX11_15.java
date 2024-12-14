@@ -1,4 +1,4 @@
-package bookExample;
+package chapter11;
 //예제 11-15 instanceof 연산자
 class Animal{ // Animal 클래스 = 부모클래스
 	

@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-4 클래스의 자동 타입 변환 4
 public class DeskCalendar extends Calendar{
 

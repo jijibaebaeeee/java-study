@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-11 ComputerRoom1 객체를 만들어줄 클래스
 public class ComputerRoom1 {
 	//필드

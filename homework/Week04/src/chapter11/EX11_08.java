@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-9 강제형변환3
 public class EX11_08 {
 	public static void main(String[] args) {

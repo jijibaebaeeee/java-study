@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-7 강제형변환2
 public class FourWheelBike extends Bike{
 	//생성자

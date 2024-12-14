@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-13 클래스생성
 public class LZ extends Computer1{
 

@@ -1,4 +1,4 @@
-package bookExample;
+package chapter11;
 //예제 11-3 클래스의 자동 타입 변환 3
 public class Calendar {
 	//필드

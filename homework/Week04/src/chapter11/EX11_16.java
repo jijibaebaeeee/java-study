@@ -1,4 +1,5 @@
-package bookExample;
+package chapter11;
+
 //예제 11-16 instanceof 연산자와 == 연산자의 차이
 class Aniaml{ // Animal 클래스 부모클래스
 	
