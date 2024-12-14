@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-8 -> 메서드 오버라이딩
 public class Samsong extends Computer { // Computer : 부모, Samsong : 자식
 

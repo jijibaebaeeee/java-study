@@ -1,4 +1,4 @@
-package bookExample;
+package chapter10;
 // 예제 10-7 -> 메서드 오버라이딩
 public class Computer {
 	void powerOn() {

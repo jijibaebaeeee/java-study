@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-9 -> 메서드 오버라이딩
 public class EX10_09 {
 	public static void main(String[] args) {

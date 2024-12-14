@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예쩨 10-5 -> 상속에서 생성자
 public class Customer extends Person {
 	//필드

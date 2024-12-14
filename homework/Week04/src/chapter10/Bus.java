@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-22 -> N차 상속
 public class Bus extends Car { // 상속받았다
 	int peopleNum;

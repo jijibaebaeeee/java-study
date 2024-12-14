@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-11 -> 접근 제한자 public
 public class PublicA {
 	//필드

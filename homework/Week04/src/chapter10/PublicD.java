@@ -1,4 +1,4 @@
-package bookExample;
+package chapter10;
 //예제 10-20 접근제한자 private
 public class PublicD {
 	public static void main(String[] args) {

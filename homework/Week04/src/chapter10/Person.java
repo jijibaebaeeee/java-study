@@ -1,4 +1,4 @@
-package bookExample;
+package chapter10;
 //예제 10-4 -> 상속에서 생성자
 public class Person {
 	//필드

@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-24 -> N차 상속
 public class EX10_24 {
 	public static void main(String[] args) {

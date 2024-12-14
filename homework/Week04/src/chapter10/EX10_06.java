@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-6 상속에서 생성자
 public class EX10_06 {
 	public static void main(String[] args) {

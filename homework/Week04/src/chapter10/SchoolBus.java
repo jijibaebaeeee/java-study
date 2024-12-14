@@ -1,4 +1,5 @@
-package bookExample;
+package chapter10;
+
 //예제 10-23 -> N차 상속
 public class SchoolBus extends Bus{
 	//생성자 -> 부모가 가지므로 자식도 가져야함

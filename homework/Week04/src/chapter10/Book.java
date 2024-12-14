@@ -1,4 +1,4 @@
-package bookExample;
+package chapter10;
 // 예제 10-1 상속
 public class Book {
 	//필드
