@@ -1,4 +1,4 @@
-package bookExample1;
+package forAnotherPac;
 //예제 10-26 -> final 메서드
 public class Comic extends Book{
 	//필드

@@ -1,4 +1,4 @@
-package bookExample1;
+package forAnotherPac;
 // 예제 10-25 -> final 메서드
 public class Book { // 클래스 선언
 	//필드

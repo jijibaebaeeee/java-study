@@ -1,4 +1,4 @@
-package bookExample1;
+package forAnotherPac;
 //예제 10-27 final 메서드
 public class EX10_27 {
 	public static void main(String[] args) {

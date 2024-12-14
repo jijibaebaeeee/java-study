@@ -1,6 +1,6 @@
-package bookExample1;
+package forAnotherPac;
 
-import bookExample.Parent;
+import chapter10.Parent;
 
 //예제 10-17 접근제한자 protected
 public class Child extends Parent{
