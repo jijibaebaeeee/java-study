@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 
 public class PineapplePhone extends Phone{
 

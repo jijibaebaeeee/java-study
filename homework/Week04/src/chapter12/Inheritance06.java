@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 //예제 11-18 오버로딩과 오버라이딩
 
 class Parent10{ // 디폴트 접근제한자이므로 같은 패키지에서만 객체 생성 가능

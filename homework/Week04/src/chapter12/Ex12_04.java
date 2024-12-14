@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 //예제 12-4 추상 클래스
 public class Ex12_04 {
 	public static void main(String[] args) {

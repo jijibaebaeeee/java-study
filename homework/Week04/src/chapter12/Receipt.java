@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 // 예제 12-1 추상클래스
 public abstract class Receipt {
 	String chef;

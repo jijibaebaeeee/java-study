@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 // 예제 12-9 -> 인터페이스 선언
 public interface Phone1 {
 	//예제 12-10 -> 상수 추가

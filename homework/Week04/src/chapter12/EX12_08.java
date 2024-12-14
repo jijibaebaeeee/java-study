@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 // 예제 12-8 -> 추상 메서드 오버라이딩 및 재정의
 public class EX12_08 {
 	public static void main(String[] args) {

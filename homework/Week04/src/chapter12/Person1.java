@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 
 public class Person1 {
 	Phone1 p;

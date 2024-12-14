@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 
 public class PineapplePhone1 implements Phone1{
 	int batteryCapacity = 40;

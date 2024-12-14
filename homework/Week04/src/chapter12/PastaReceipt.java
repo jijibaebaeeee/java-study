@@ -1,4 +1,4 @@
-package bookExample;
+package chapter12;
 
 public class PastaReceipt extends Receipt{
 
