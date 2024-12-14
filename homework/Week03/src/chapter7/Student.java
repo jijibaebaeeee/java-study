@@ -1,4 +1,4 @@
-package bookExample;
+package chapter7;
 
 // 예제 7-12 -> 정적 멤버
 public class Student { // 클래스 선언

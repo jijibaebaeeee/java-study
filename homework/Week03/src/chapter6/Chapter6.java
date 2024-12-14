@@ -1,4 +1,4 @@
-package bookExample;
+package chapter6;
 
 import java.util.Arrays;
 import java.util.Comparator;

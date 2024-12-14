@@ -1,5 +1,4 @@
-package bookExample;
-
+package chapter7;
 
 // 예제 7-4 하나의 소스 파일에 하나의 클래스 선언
 class Cat{ // 클래스 선언

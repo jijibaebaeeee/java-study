@@ -1,4 +1,4 @@
-package bookExample;
+package chapter9;
 
 // 예제 9-1 생성자
 public class Snack { // 클래스 선언

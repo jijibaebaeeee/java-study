@@ -1,4 +1,4 @@
-package bookExample;
+package chapter8;
 
 public class Chapter8 {
 	public static void main(String[] args) { // 메인 메소드의 시작 영역

@@ -1,4 +1,4 @@
-package bookExample;
+package chapter7;
 
 public class Family { // 클래스 선언
 	String name; // 구성원 이름

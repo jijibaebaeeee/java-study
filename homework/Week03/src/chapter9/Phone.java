@@ -1,4 +1,4 @@
-package bookExample;
+package chapter9;
 
 //예제 9-7 생성자 매개변수 부족
 public class Phone { // 클래스 선언

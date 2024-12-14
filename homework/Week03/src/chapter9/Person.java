@@ -1,4 +1,4 @@
-package bookExample;
+package chapter9;
 
 // 예제 9-5 매개변수 2개로 객체 생성하기
 public class Person {

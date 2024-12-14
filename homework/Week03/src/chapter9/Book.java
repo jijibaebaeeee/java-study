@@ -1,4 +1,4 @@
-package bookExample;
+package chapter9;
 
 // 에제 9-11 오버로딩
 public class Book {

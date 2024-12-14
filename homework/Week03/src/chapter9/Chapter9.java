@@ -1,5 +1,4 @@
-package bookExample;
-
+package chapter9;
 
 public class Chapter9 { // main 클래스를 담는 클래스
 	public static void main(String[] args) { 

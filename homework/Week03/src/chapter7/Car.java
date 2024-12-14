@@ -1,4 +1,4 @@
-package bookExample;
+package chapter7;
 
 // 예제 7-5 -> 필드 사용
 public class Car { // 클래스 선언
