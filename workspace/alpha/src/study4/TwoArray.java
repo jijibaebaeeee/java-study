@@ -17,10 +17,13 @@ public class TwoArray {
 	// i = 2 j = 
 	
 	public static void main(String[] args) {
+		int cnt = 1;
 		
 		for(int i = 1; i <= 4; i++) {
 			for(int j = 0; j < i ; j++) {
-				System.out.print(i+j);
+				System.out.print(cnt);
+				System.out.print(' ');
+				cnt++;
 			}
 			System.out.println();
 		}

@@ -11,6 +11,7 @@ public class StringTest {
 		//indexOf()		
 		System.out.println(msg.indexOf("안"));
 		System.out.println(msg.indexOf("녜"));
+		System.out.println(msg.toString());
 		
 		//split()
 		String msg2 = "안!녕!하!세!요!";

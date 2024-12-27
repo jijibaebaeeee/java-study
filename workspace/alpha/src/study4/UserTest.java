@@ -22,5 +22,25 @@ public class UserTest {
 //
 //	UserTest 클래스
 //	 main 메소드에 객체 2개 생성 후 list에 저장하고 모든 메소드 호출
-
+	
+	public static void main(String[] args) {
+		UserService us = new UserService();
+		
+		UserDTO dto = new UserDTO("isnna1","1234","배지수", 26); // 리스트에 추가하는법
+		
+		
+		us.
+		
+		
+		try {
+			if(us.checkId("isnna1")) {
+				System.out.println("중복이 없습니다.");
+			}else {
+				System.out.println("중복입니다.");
+			}
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+		
+	}
 }
